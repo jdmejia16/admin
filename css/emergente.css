@@ -1,0 +1,93 @@
+
+#ventana{
+	position: absolute;
+	display: block;
+	clear: both;
+	margin-top: 7%;
+	margin-right: auto;
+	margin-left: 30%;
+	width:70%;
+	height:75%;
+}
+#ventana-flotante {
+width: 50%;  /* Ancho de la ventana */
+height: 70%;  /* Alto de la ventana */
+background-image: url(../images/transparente6.png);  /* Color de fondo */
+margin-left: auto;
+margin-right: auto;
+border: .2em solid black;  /* Borde de la ventana */
+box-shadow: 0 .2em .4em rgba(0,0,0,.1);  /* Sombra */
+z-index:999;
+}
+#ventana-flotante #contenedor {
+padding: .2em .1em .1em .2em;
+}
+#ventana-flotante .cerrar {
+float: right;
+color: white;
+background-image: url(../images/transparente5.png); 
+line-height: 1.7em;
+text-decoration: none;
+padding: 0 .5em;
+font-family: arial black;
+border-radius: 0 0 .2em .2em;
+font-size: 2em;
+-webkit-transition: .3s;
+-moz-transition: .3s;
+-o-transition: .3s;
+-ms-transition: .3s;
+}
+#ventana-flotante .cerrar:hover {
+background-image: url(../images/transparente3.png); 
+color: black;
+text-decoration: none;
+}
+#CERRAR VENTANA AUTOMATICAMENTE
+setTimeout('closeWin(newWindow)', 5000); // tiempo 5 segundos antes de cerrar
+}
+function closeWin(newWindow) {
+newWindow.close(); // cerrar la ventana
+}
+#ventana-flotante{
+margin-left: auto;
+margin-right: auto;
+padding: 2.5em;
+background-image: url(../images/transparente8.png); 
+font-size: .7em;  /* Tamaño del texto del mensaje */
+color: yellow;  /* Color del texto del mensaje */
+margin: 0 auto;
+border-radius: 4px;
+}
+#contenido{
+margin-left: auto;
+margin-right: auto;
+padding: 1.5em;
+background-image: url(../images/transparente8.png); 
+font-family:'Luckiest Guy', cursive;
+font-size: 1.2em;  /* Tamaño del texto del mensaje */
+color:black;  /* Color del texto del mensaje */
+text-shadow: .1em .1em  white;
+border-radius: .3em .2em;
+text-align:center;
+width: 75%;
+}
+.oculto {-webkit-transition:1s;-moz-transition:1s;
+         -o-transition:1s;-ms-transition:1s;opacity:0;-ms-opacity:0;
+        -moz-opacity:0;visibility:hidden;
+}
+#st{
+font-family:'Luckiest Guy', cursive;
+font-size: 3em;  /* Tamaño del texto del mensaje */
+color:white;  /* Color del texto del mensaje */
+text-shadow: .1em .1em  black;
+}
+#sp{
+font-family:'Luckiest Guy', cursive;
+font-size: 3em;  /* Tamaño del texto del mensaje */
+color:white;  /* Color del texto del mensaje */
+text-shadow: .1em .1em  black;
+
+#vi{
+    width: 100%;
+    height: 30%;
+}

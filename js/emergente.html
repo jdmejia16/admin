@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+  <style>
+#ventana-flotante {
+width: 50%;  /* Ancho de la ventana */
+height: 25%;  /* Alto de la ventana */
+background-color: black;  /* Color de fondo */
+margin-left: auto;
+margin-right: auto;
+border: .2em solid black;  /* Borde de la ventana */
+box-shadow: 0 .2em .4em rgba(0,0,0,.1);  /* Sombra */
+z-index:999;
+}
+#ventana-flotante #contenedor {
+padding: .2em .1em .1em .2em;
+}
+#ventana-flotante .cerrar {
+float: right;
+color: white;
+background-color: black;
+line-height: 1.7em;
+text-decoration: none;
+padding: 0 .5em;
+font-family: arial black;
+border-radius: 0 0 .2em .2em;
+font-size: 2em;
+-webkit-transition: .3s;
+-moz-transition: .3s;
+-o-transition: .3s;
+-ms-transition: .3s;
+}
+#ventana-flotante .cerrar:hover {
+background-color: white;
+color: black;
+text-decoration: none;
+}
+#CERRAR VENTANA AUTOMATICAMENTE
+setTimeout('closeWin(newWindow)', 5000); // tiempo 5 segundos antes de cerrar
+}
+function closeWin(newWindow) {
+newWindow.close(); // cerrar la ventana
+}
+#ventana-flotante{
+margin-left: auto;
+margin-right: auto;
+padding: 2.5em;
+background-color: grey;  /* Fondo del mensaje */ 
+font-size: .7em;  /* Tamaño del texto del mensaje */
+color: yellow;  /* Color del texto del mensaje */
+margin: 0 auto;
+border-radius: 4px;
+}
+#contenido{
+margin-left: auto;
+margin-right: auto;
+padding: 1.5em;
+background-color:red;  /* Fondo del mensaje */
+font-family:verdana;
+font-size: 1.2em;  /* Tamaño del texto del mensaje */
+color:black;  /* Color del texto del mensaje */
+text-shadow: .1em .1em  white;
+border-radius: .3em .2em;
+text-align:center;
+width: 75%;
+}
+.oculto {-webkit-transition:1s;-moz-transition:1s;
+         -o-transition:1s;-ms-transition:1s;opacity:0;-ms-opacity:0;
+        -moz-opacity:0;visibility:hidden;
+}
+strong{
+font-family:comic sans ms;
+font-size: 1.8em;  /* Tamaño del texto del mensaje */
+color:black;  /* Color del texto del mensaje */
+text-shadow: .1em .1em  white;
+}
+span{
+font-family:comic sans ms;
+font-size: 1.8em;  /* Tamaño del texto del mensaje */
+color:black;  /* Color del texto del mensaje */
+text-shadow: .1em .1em  white;
+
+video{
+    width: 100%;
+    height: 30%;
+}
+img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+        }
+    img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+        }
+</style>
+<script type="text/javascript">
+    document.oncontextmenu = function(){return false;}
+</script>
+    </head>
+    <body>
+        <div id="ventana-flotante">
+            <a class="cerrar" href='javascript:void(0);' 
+               onclick="document.getElementById(&apos;ventana-flotante&apos;).className = &apos;oculto&apos;">x
+            </a>
+        <div id="contenido">
+            <strong>Gracias por Visitar</strong><br>
+            <span>Mi Web</span>
+            <div id="nota-texto" class="span6 pull-right last nota-texto"></div>
+            <p><video src="img/video.mp4" width="100%" height="100%" autoplay></p>
+        </div>
+        </div>
+    </body>
+</html>
